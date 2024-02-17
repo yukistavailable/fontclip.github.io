@@ -17,6 +17,11 @@ body {
   font-variant: small-caps;
 }
 
+.fontclip {
+  /* bold font */
+  font-weight: bold;
+}
+
 
 .teaser .hero-body {
   padding-top: 0;
@@ -126,6 +131,155 @@ body {
 .results-carousel video {
   margin: 0;
 }
+
+#results-gif {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+#results-gif .item {
+  flex: 0 0 auto;
+  /* Prevents the items from growing or shrinking */
+  width: 200px;
+  /* Fixed width for each item */
+  height: 250px;
+  /* Fixed height for each item */
+  margin: 5px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* Aligns content vertically */
+  align-items: center;
+  /* Centers content horizontally */
+}
+
+#results-gif .item img {
+  width: auto;
+  /* Adjusts width automatically */
+  height: 70%;
+  /* Adjusts height to a percentage of the container */
+  max-width: 100%;
+  /* Ensures image doesn't exceed container width */
+  object-fit: cover;
+  /* Ensures the image covers the area without distortion */
+  border-bottom: 1px solid #bbb;
+  /* Optional border between image and text */
+}
+
+#results-gif .item .item-description {
+  text-align: center;
+  padding: 10px;
+  flex-grow: 1;
+  /* Allows the text area to fill remaining space */
+}
+
+#results-big-gif {
+  display: flex;
+  justify-content: center;
+  /* Centers items horizontally */
+  flex-wrap: nowrap;
+  /* Prevents wrapping to the next line */
+}
+
+#results-big-gif .item {
+  flex: 0 0 auto;
+  /* Prevents the items from growing or shrinking */
+  /* width: calc(50% - 20px); */
+  width: 50%;
+  /* Adjusts width to fit two items in a row, accounting for gap */
+  height: auto;
+  /* Adjusts height automatically based on content */
+  margin: 10px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#results-big-gif .item img {
+  width: 100%;
+  /* Ensures the image takes the full width of the item */
+  height: auto;
+  /* Adjusts height to maintain aspect ratio */
+  object-fit: cover;
+  /* Ensures the image covers the area without distortion */
+  border-bottom: 1px solid #bbb;
+}
+
+#results-big-gif .item .item-description {
+  text-align: center;
+  padding: 10px;
+}
+
+#results-gif-with-reference-image {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+#results-gif-with-reference-image .item {
+  flex: 0 0 auto;
+  /* Prevents the items from growing or shrinking */
+  /* width: calc(50% - 20px); */
+  width: 30%;
+  /* Adjusts width to fit two items in a row, accounting for gap */
+  height: auto;
+  /* Adjusts height automatically based on content */
+  margin: 10px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#results-gif-with-reference-image .item img {
+  max-width: 100%;
+  /* Ensures images do not exceed the item width */
+  height: auto;
+  /* Maintains aspect ratio */
+  display: block;
+  /* Images are block level to allow for margin auto */
+  margin: 0 auto 10px;
+  /* Centers images horizontally and adds space below */
+  border-bottom: 1px solid #bbb;
+}
+
+#results-gif-with-reference-image .item .item-description {
+  margin-bottom: 10px;
+  /* Adds space below the description */
+}
+
+
+.subtitle {
+  margin-bottom: 20px;
+  /* Adds space below each subtitle */
+}
+
+.application-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.font-retrieval-description p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* Adds space above the description */
+  font-size: 1rem;
+  /* Sets the font size */
+  line-height: 1.5;
+  /* Adjusts line spacing for better readability */
+  text-align: center;
+  /* Justifies the text for a clean look */
+  /* Add any additional styling as needed */
+}
+
 
 
 .interpolation-panel {
