@@ -122,7 +122,7 @@ Multilingual Font Applications">
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body has-text-centered">
+    <div class="has-text-centered">
       <img src="./static/images/teaser.svg" alt="teaser" width="70%" class="centered-image">
       <h2 class="subtitle has-text-centered">
         <span class="fontclip">FontCLIP</span> is a semantic typography visual-language model for multilingual font applications.
@@ -136,8 +136,8 @@ Multilingual Font Applications">
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+      <div class="column is-four-fifths is-centered">
+        <span class="title is-3">Abstract</span>
         <div class="content has-text-justified">
           <p>
             Acquiring the desired font for various design tasks can be challenging and requires professional typographic knowledge.
@@ -167,13 +167,10 @@ Multilingual Font Applications">
       </div>
     </div>
   </div>
-</section>
-
-<section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Method</h2>
+        <span class="title is-3">Method</span>
         <div class="content has-text-justified">
           <p>
             We finetune a pretrained CLIP model with an existing font-attribute dataset to obtain FontCLIP.
@@ -186,7 +183,7 @@ Multilingual Font Applications">
             function.
           </p>
         </div>
-        <div class="hero-body has-text-centered">
+        <div class="has-text-centered">
           <img src="./static/images/finetune_overview.svg" alt="teaser" width="90%" class="centered-image">
           <h2 class="has-text-centered">
             Overflow of the finetuning process
@@ -197,21 +194,22 @@ Multilingual Font Applications">
   </div>
 </section>
 
-<section class="section">
+
+<!-- <section class="section"> -->
   <div class="container is-full">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
         <h2 class="title is-3">Applications</h2>
         <div class="application-block">
-          <h2 class="title is-4">Dual-Modal and Cross-Lingual Font Retrieval</h2>
+          <h2 class="title is-4">1. Dual-Modal and Cross-Lingual Font Retrieval</h2>
           <div>
-            <h3 class="title is-5">How does it work?</h3>
+            <span class="title is-5">How does it work?</span>
             <p>
               The system calculates the cosine distance between the input text prompt or image and the image of each font in the database, and then the sorted fonts are returned.
             </p>
           </div>
           <br>
-          <h3 class="title is-5">User Interface</h3>
+          <span class="title is-5">User Interface</span>
           <div id="results-big-gif">
             <div class="item font-retrieval-prompt">
               <img src="./static/videos/font_retrieval.gif">
@@ -227,9 +225,9 @@ Multilingual Font Applications">
           </div>
         </div>
         <div class="application-block">
-          <h3 class="title is-4">Dual-Modal and Cross-Lingual Vector Optimization</h2>
+          <h3 class="title is-4">2. Dual-Modal and Cross-Lingual Vector Optimization</h2>
             <div>
-              <h3 class="title is-5 is-max-desktop">How does it work?</h3>
+              <span class="title is-5 is-max-desktop">How does it work?</span>
               <p>
               The initial letter in SVG format is redered to a bitmap differentiably and input into the FontCLIP image encoder to calculate the distance between the latent vector and the reference latent vector, which is obtained from a reference text prompt or image.
               The parameters of bezier curves in the input letter are repeatedly optimized by backpropagating the loss, which is the sum of the distance in the FontCLIP latent space and other constraints to preserve the initial letter shape.
@@ -238,7 +236,7 @@ Multilingual Font Applications">
               <img src="./static/images/opt_framework.svg" width="70%" class="centered-image">
             </div>
             <div>
-              <h3 class="title is-5">Vector Optimization Guided with a Text Prompt</h2>
+              <span class="title is-5">Vector Optimization Guided with a Text Prompt</span>
               <div id="results-gif">
                 <div class="item item-A_serif">
                   <img src="./static/videos/A_serif_5seconds.gif">
@@ -267,7 +265,7 @@ Multilingual Font Applications">
               </div>
             </div>
             <div>
-              <h3 class="title is-5">Vector Optimization Guided with a Reference Image</h3>
+              <span class="title is-5">Vector Optimization Guided with a Reference Image</span>
               <div id="results-gif-with-reference-image">
                 <div class="item item-B_serif_visual">
                   <img src="./static/videos/B_serif_visual_5seconds.gif" alt="Optimized serif font">
@@ -293,7 +291,7 @@ Multilingual Font Applications">
       </div>
     </div>
   </div>
-</section>
+<!-- </section> -->
 
 
 <footer class="footer">
