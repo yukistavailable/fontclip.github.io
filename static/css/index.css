@@ -239,6 +239,7 @@ body {
 
 #results-gif-with-reference-image .item img {
   max-width: 100%;
+  width: 100%;
   /* Ensures images do not exceed the item width */
   height: auto;
   /* Maintains aspect ratio */
